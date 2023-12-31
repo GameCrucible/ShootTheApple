@@ -5,8 +5,8 @@ using UnityEngine;
 public class AppleSpawner : MonoBehaviour
 {
     public GameObject apple;
-    public int calls = 0;
     public int appleCount;
+    public float[] yRange;
 
     void Start()
     {
@@ -15,10 +15,15 @@ public class AppleSpawner : MonoBehaviour
 
     void SpawnApple()
     {
-        calls++;
-        appleCount = Random.Range(calls, 4);
-        int side = Random.Range(0,2) * 2 - 1;
-        Instantiate(apple, new Vector2((11.5f * side), Random.Range(-4f,-6f)), Quaternion.identity);
+        appleCount = Random.Range(1, 4);
+        for (int i = 0; i < appleCount; i++)
+        {
+            int side = Random.Range(0, 2) * 2 - 1;
+            int randomIndex = Random.Range(0,3);
+            Instantiate(apple, new Vector2((11.5f * side), yRange[randomIndex]), Quaternion.identity);
+        }
+        Invoke("SpawnApple", 2f);
+
     }
 
 }

@@ -22,7 +22,8 @@ public class AppleShootScript : MonoBehaviour
         {
             direction = -1;
         }
-        Vector2 force = new Vector2((350 * direction), 600);
+        int xForce = (Random.Range(5, 9)) * 50;
+        Vector2 force = new Vector2((xForce * direction), (300 + (300 * this.gameObject.transform.position.y/(-4))));
         rb2D = gameObject.GetComponent<Rigidbody2D>(); //assigns rigidbody to code
         rb2D.AddForce(force); //350, 600 base
     }
