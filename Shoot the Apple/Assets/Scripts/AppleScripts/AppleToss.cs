@@ -8,7 +8,7 @@ public class AppleToss : MonoBehaviour
 
     void Awake()
     { //done on initialization
-        Vector2 force = new Vector2(0, 50 * Random.Range(16,22));
+        Vector2 force = new Vector2(0, 50 * Random.Range(10,16));
         rb2D = gameObject.GetComponent<Rigidbody2D>(); //assigns rigidbody to code
         rb2D.AddForce(force);
     }
