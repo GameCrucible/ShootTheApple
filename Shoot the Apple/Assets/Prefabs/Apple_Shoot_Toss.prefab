@@ -96,9 +96,9 @@ GameObject:
   - component: {fileID: 3961300705416107380}
   - component: {fileID: 3961300705416107383}
   - component: {fileID: 3961300705416107382}
-  - component: {fileID: 5247857875951493211}
+  - component: {fileID: 3536845348184913954}
   m_Layer: 3
-  m_Name: Apple_Shoot
+  m_Name: Apple_Shoot_Toss
   m_TagString: Apple
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -171,7 +171,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   manager: {fileID: 0}
   slices: {fileID: 5232159160459453024, guid: 53333f7036c9af445838c0f6c4d41d36, type: 3}
---- !u!114 &5247857875951493211
+--- !u!114 &3536845348184913954
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -180,6 +180,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 3961300705416107339}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9dbe3def15eb09f4a9b01a028449a9c8, type: 3}
+  m_Script: {fileID: 11500000, guid: c68cad21f6f416a4ca46a7b30db6e807, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
